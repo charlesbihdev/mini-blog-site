@@ -1,0 +1,34 @@
+general = #e0e0e0
+background color = #e1eceb / #d8e2e3
+components = #f3f7fa
+sidebar = #e1ebeb
+
+
+CREATE USER 'group7'@'localhost' IDENTIFIED BY 'CEGROUP7';
+GRANT ALL PRIVILEGES ON blog_site.* TO 'group7'@'localhost';
+FLUSH PRIVILEGES;
+
+DATABASE = blog_site;
+USER = group7;
+SERVER = localhost;
+password = CEGROUP7;
+
+//creating sessions
+session_start();
+    $_SESSION['user_id'] = $user['id'];
+
+
+//password verify
+
+if (password_verify($password, $stored_hash)) {
+  // the login attempt is successful
+}
+
+//hash password
+$hash = password_hash($password, PASSWORD_DEFAULT);
+
+
+if (confirm("Are you sure you want to delete this file?")) {
+  var file_name = "file.txt"; // replace with actual file name
+  location.href = "delete_file.php?file_name=" + file_name;
+}
