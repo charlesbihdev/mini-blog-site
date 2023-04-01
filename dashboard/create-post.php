@@ -151,6 +151,14 @@ if (isset($_SESSION['user_id'])) {
 
   <div id="main-container">
     <?php
+
+    if ($r['isadmin'] == 1) {
+      $isadmin = 'ADMIN';
+    } else
+    // else render the posts of the that particular user
+    {
+      $isadmin = 'USER';
+    }
     include './navbar.php';
     include './sidebar1.php';
     ?>

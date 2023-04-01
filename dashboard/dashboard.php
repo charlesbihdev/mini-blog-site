@@ -18,6 +18,7 @@ if (isset($_SESSION['user_id'])) {
         FROM posts
         INNER JOIN users
         ON posts.user_id = users.id";
+        $isadmin = 'ADMIN';
     } else
     // else render the posts of the that particular user
     {
@@ -25,6 +26,7 @@ if (isset($_SESSION['user_id'])) {
         FROM posts
         INNER JOIN users
         ON posts.user_id = users.id WHERE users.id = $userid";
+        $isadmin = 'USER';
     }
 
     $join_result = mysqli_query($conn, $join_query);
