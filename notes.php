@@ -7,9 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <?php
-  if (isset($_POST['submit'])) {
-    echo gettype(($_FILES['image']['type']));
-  }
+  // if (isset($_POST['submit'])) {
+  //   echo gettype(($_FILES['image']['type']));
+  // }
   //   echo '<script>
   //   var result = confirm("Are you sure you want to delete this file?");
   //   if (result) {
@@ -19,6 +19,9 @@
   //   }
   // </script>';
   //     }
+  $code = '           <p>my new post</p>         ';
+  $text = strip_tags($code);
+  echo $text;
   ?>
 
 </head>

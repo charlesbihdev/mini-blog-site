@@ -32,3 +32,15 @@ if (confirm("Are you sure you want to delete this file?")) {
   var file_name = "file.txt"; // replace with actual file name
   location.href = "delete_file.php?file_name=" + file_name;
 }
+
+
+To retrieve the created_at timestamp column from the posts table and convert its timezone to Ghana (Africa/Accra), you can use the following query:
+
+
+SELECT CONVERT_TZ(created_at, 'UTC', 'Africa/Accra') AS created_at_local
+FROM posts;
+
+mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -u group7 -p mysql
+
+
+<a href="../<?php echo $post['slug'] ?>" target="_blank" class=" container cont">

@@ -5,7 +5,8 @@ CREATE TABLE users (
   lastname VARCHAR(50) NOT NULL,
   email VARCHAR(60) NOT NULL,
   password VARCHAR(255) NOT NULL,
-  image VARCHAR(255)
+  image VARCHAR(255),
+  isadmin TINYINT(1) NOT NULL DEFAULT 0
 );
 
 -- Create posts table
@@ -15,6 +16,7 @@ CREATE TABLE posts (
   post TEXT NOT NULL,
   slug VARCHAR(255) NOT NULL,
   title VARCHAR(255) NOT NULL,
+  image VARCHAR(255),
   created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
   FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
 );

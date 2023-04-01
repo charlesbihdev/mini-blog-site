@@ -28,7 +28,6 @@
                 $classes = 'notification is-warning';
                 $message = 'File is too large. Upload new image';
                 $visible = '';
-                exit;
             }
 
             if (in_array($fileExtension[1], $allowedExtension)) {
@@ -45,25 +44,21 @@
                         $classes = 'notification is-danger';
                         $message = 'Unable to create account. Try again';
                         $visible = '';
-                        exit;
                     }
                 } else {
                     $classes = 'notification is-warning';
                     $message = 'File is too large.  Upload new image';
                     $visible = '';
-                    exit;
                 }
             } else {
                 $classes = 'notification is-warning';
                 $message = 'File format is not supported.  Upload an image';
                 $visible = '';
-                exit;
             }
         } else {
             $classes = 'notification is-warning';
             $message = 'Passwords you provided does\'nt match';
             $visible = '';
-            exit;
         }
     }
     ?>
