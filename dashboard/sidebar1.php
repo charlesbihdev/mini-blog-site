@@ -17,7 +17,7 @@
         <a href="./dashboard.php" style="text-decoration: none;">
             <div class="tab cont" in-type="tab3">
                 <i class="fa-solid fa-user-group"></i>
-                <p>Group Members</p>
+                <p>Contributors </p>
             </div>
         </a>
 

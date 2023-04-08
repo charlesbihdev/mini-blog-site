@@ -14,7 +14,7 @@
     </a>
     <div class="tab cont" in-type="tab3">
       <i class="fa-solid fa-user-group"></i>
-      <p>Group Members</p>
+      <p>Contributors </p>
     </div>
   </div>
   <a href="../logout.php" style="text-decoration: none;">
