@@ -20,6 +20,10 @@ $post = mysqli_fetch_assoc($result);
 
 $fetched_post = $post['post'];
 $decode_post = html_entity_decode($fetched_post);
+
+if (mysqli_num_rows($result) < 1) {
+    header('location: ./error404.php');
+}
 ?>
 
 
