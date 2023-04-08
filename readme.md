@@ -14,8 +14,8 @@ This is a simple blogsite which allows users to sign up. The app stores all the 
 
 - ### Create Post
 <img src="./mk-image/create.JPG" width="600" height="300">
-  Users can click on the create post and create a blog post. There are three sections in the create post page which includes: The title area, where users can type the title of the blog they are about to publish. The Thumbnail area, which also helps users to choose the image they want to use as thier post's thumbnail photo and the main content. The main content is made of WYSIWYG editor which formats all what you type in an HTML format and submits it to database (lol😉 I got this idea from a wordpress plugin called
-**[Classic Editor](https://wordpress.org/plugins/classic-editor/)**) . There are two buttons Publish and Discard. One is used for publishing and one discard the post respectively.
+  Users can click on the create post and create a blog post. There are three sections in the create post page which includes: The title area, where users can type the title of the blog they are about to publish. The Thumbnail area, which also helps users to choose the image they want to use as thier post's thumbnail photo and the main content. The main content is made of WYSIWYG editor which formats all what you type in an HTML format and submits it to database (lol😉 I got this idea from a wordpress plugin called <a href="https://wordpress.org/plugins/classic-editor/" title="Classic Editor">Classic Editor</a>
+) . There are two buttons Publish and Discard. One is used for publishing and one discard the post respectively.
 
 ## Setting Up UMAT-PRESS
 
@@ -38,7 +38,7 @@ Sorry😪 I couldnt deploy the project. I tried deploying it on free hosting sit
     <br><code>USE my_database.</code><br>
 
 3.  Now you can import the sql file to your command line client using the following command.<br>
-    <code> source /path/to/your/file.sql;</code>
+    <code> source /path/to/your/file.sql;</code><br>
     Replace path/to/your/file.sql with the path to the blog_site.sql.
 
 4.  Now mysqli command line client will execute the sql file and create the neccessary tables for you.
