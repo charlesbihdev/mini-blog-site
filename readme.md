@@ -35,12 +35,11 @@ Sorry😪 I couldnt deploy the project. I tried deploying it on free hosting sit
 
 1.  Create a Database.
 2.  The command below is used to switch to your created database.
-    <code>USE my_database.</code>
+    <br><code>USE my_database.</code><br>
 
-3.  Now you can import the sql file to your command line client using the following command.
-    <code> source /path/to/your/file.sql;
-
-    Replace path/to/your/file.sql with the path to the blog_site.sql. </code>
+3.  Now you can import the sql file to your command line client using the following command.<br>
+    <code> source /path/to/your/file.sql;</code>
+    Replace path/to/your/file.sql with the path to the blog_site.sql.
 
 4.  Now mysqli command line client will execute the sql file and create the neccessary tables for you.
 
