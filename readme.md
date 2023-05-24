@@ -1,4 +1,5 @@
 ## Intro
+<img src="./mk-image/postss.JPG" width="600" height="300">
 
 Hello I'm Charles Owusu Bih, an aspiring software Developer. This is my second PHP project. My first project was a simple crud application which I added an upload image feature, checkout my first php project [here](http://charles-crud.infinityfreeapp.com/create.php). I decided to try something new this time by building a mini blog website. I decide to name it UMAT-PRESS. UMAT is University of Mines and Technology(My current institution) and Press comes from **Wordpress**. I am a blogger and wordpress developer, basically I got the UMAT-PRESS inspiration from **wordpress**.
 
@@ -10,7 +11,7 @@ This is a simple blogsite which allows users to sign up. The app stores all the 
 
   <img src="./mk-image/dashboard.JPG" width="600" height="300">
 
-  The posts tab displays the posts you have written(Account - Users) and displays all posts in the dabase(Account - Admin). Admins can see all posts but users see posts they have written. On every post there are theree buttons(icons) that is the View, Edit, Delete. The view opens the article in a new tab. The blogger can copy the link of that article and share it to other people for them to view his blog. The Edit is used to Edit a particular post and the delete is also used to delete the post as the name suggest.
+  The posts tab displays the posts you have written(Account - Users) and displays all posts in the dabase(Account - Admin). Admins can see all posts but users see posts they have written. On every post there are three buttons(icons) that is the View, Edit, Delete. The view opens the article in a new tab. The blogger can copy the link of that article and share it to other people for them to view his blog. The Edit is used to Edit a particular post and the delete is also used to delete the post as the name suggest.
 
 - ### Create Post
 <img src="./mk-image/create.JPG" width="600" height="300">
