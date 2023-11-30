@@ -1,36 +1,36 @@
 ## Intro
 <img src="./mk-image/postss.JPG" width="600" height="300">
 
-Hello I'm Charles Owusu Bih, an aspiring software Developer. This is my second PHP project. My first project was a simple crud application which I added an upload image feature, checkout my first php project [here](http://charles-crud.infinityfreeapp.com/create.php). I am a blogger and wordpress developer, basically I got the UMAT-PRESS inspiration from **wordpress**.
+Hello, I'm Charles Owusu Bih, an aspiring software developer. This is my second PHP project. My first project was a simple Crud application in which I added an upload image feature. Check out my first PHP project [here](http://charles-crud.infinityfreeapp.com/create.php). I am a blogger and WordPress developer; basically, I got the MINI-PRESS inspiration from **WordPress**.
 
-## About UMAT-PRESS
+## About MINI-PRESS
 
-This is a simple blogsite which allows users to sign up. The app stores all the data in a database and retrieve it later. After signing up the user can log in to his dashboard to view his posts. If there are no posts the app will indicate after clicking on the post tab on the sidebar.
+This is a simple blog site that allows users to sign up. The app stores all the data in a database and retrieves it later. After signing up, the user can log in to his dashboard to view his posts. If there are no posts, the app will indicate this after clicking on the post tab in the sidebar.
 
 - ## Posts Tab
 
   <img src="./mk-image/dashboard.JPG" width="600" height="300">
 
-  The posts tab displays the posts you have written(Account - Users) and displays all posts in the dabase(Account - Admin). Admins can see all posts but users see posts they have written. On every post there are three buttons(icons) that is the View, Edit, Delete. The view opens the article in a new tab. The blogger can copy the link of that article and share it to other people for them to view his blog. The Edit is used to Edit a particular post and the delete is also used to delete the post as the name suggest.
+The posts tab displays the posts you have written (Account-Users) and all posts in the database (Account-Admin). Admins can see all posts, but users can see posts they have written. On every post, there are three buttons: View, Edit, and Delete. The view opens the article in a new tab. The blogger can copy the link to that article and share it with other people so they can view his blog. The edit is used to edit a particular post, and the delete is also used to delete the post, as the name suggests.
 
 - ### Create Post
 <img src="./mk-image/create.JPG" width="600" height="300">
-  Users can click on the create post and create a blog post. There are three sections in the create post page which includes: The title area, where users can type the title of the blog they are about to publish. The Thumbnail area, which also helps users to choose the image they want to use as thier post's thumbnail photo and the main content. The main content is made of WYSIWYG editor which formats all what you type in an HTML format and submits it to database (lol😉 I got this idea from a wordpress plugin called <a href="https://wordpress.org/plugins/classic-editor/" title="Classic Editor">Classic Editor</a>
-) . There are two buttons Publish and Discard. One is used for publishing and one discard the post respectively.
+Users can click on the Create Post button to create a blog post. There are three sections on the Create Post page, which include: The title area, where users can type the title of the blog they are about to publish, The thumbnail area also helps users choose the image they want to use as their post's thumbnail photo and the main content. The main content is made by the WYSIWYG editor, which formats all that you type in an HTML format and submits it to the database (lol😉 I got this idea from a WordPress plugin called <a href="https://wordpress.org/plugins/classic-editor/" title="Classic Editor">Classic Editor</a>
+There are two buttons: publish and discard. One is used for publishing, and one discards the post, respectively.
 
-## Setting Up UMAT-PRESS
+## Setting Up MINI-PRESS
 
-Sorry😪 I couldnt deploy the project. I tried deploying it on free hosting site and everything was working fine except the main blog page which user cannot view blog posts. This is the cause: I used an SEO friendly slug method that is blog post url will look like **http://sitename/the-slug-of-the-post** This requires an .htaccess file to rewirte every url that does not point to any directory as **http://sitename/blog.php?slug=the-slug-of-the-post**. Then I can use the $\_GET php superglobal to fetch that specific post from the database using the slug. These free hosting sites do not allow you to do this because the assume blog sites etc. use a lot of resources.
+Sorry😪 I couldn't deploy the project. I tried deploying it on the free hosting site, and everything was working fine except the main blog page, where users cannot view blog posts. This is the cause: I used an SEO-friendly slug method, that is, the blog post URL will look like **http://sitename/the-slug-of-the-post** This requires a.htaccess file to rewrite every URL that does not point to any directory as **http://sitename/blog.php?slug=the-slug-of-the-post**. Then I can use the $_GET php superglobal to fetch that specific post from the database using the slug. These free hosting sites do not allow you to do this because they assume blog sites etc. use a lot of resources.
 
 - ### Setting up on a local server (phpmyadmin as db)
 
-1. Download the zip file which contails all the files in this repo and extract it
+1. Download the zip file which contains all the files in this repo and extract it
 2. Create a Database on **phpmyadmin** and give it a name
 3. Click on **import** tab at the top of the page
 4. Click on choose file. open the database folder of the downloaded file and select blog_site.sql
-5. Once you have selected the file click on GO button to start importing the tables.
+5. Once you have selected the file click on the GO button to start importing the tables.
 6. Locate the conn.php and update various variables(password, username, database etc.).
-7. Start your server launch the app.
+7. Start your server and launch the app.
 
 - ### Setting up on a local server (mysqli Command Line client as db)
 
@@ -38,20 +38,20 @@ Sorry😪 I couldnt deploy the project. I tried deploying it on free hosting sit
 2.  The command below is used to switch to your created database.
     <br><code>USE my_database.</code><br>
 
-3.  Now you can import the sql file to your command line client using the following command.<br>
+3.  Now you can import the SQL file to your command line client using the following command.<br>
     <code> source /path/to/your/file.sql;</code><br>
     Replace path/to/your/file.sql with the path to the blog_site.sql.
 
-4.  Now mysqli command line client will execute the sql file and create the neccessary tables for you.
+4.  Now mysqli command line client will execute the sql file and create the necessary tables for you.
 
-5.  These SQL commands create a new user 'charlesbih' with the password 'Bih222' and grants all privileges on the 'blog_site' database to this user. The FLUSH PRIVILEGES command refreshes the grant tables in the mysql database to ensure that the privileges take effect immediately.
+5.  These SQL commands create a new user 'charlesbih' with the password 'Bih222' and grant all privileges on the 'blog_site' database to this user. The FLUSH PRIVILEGES command refreshes the grant tables in the MySQL database to ensure that the privileges take effect immediately.
 
         CREATE USER 'charlesbih'@'localhost' IDENTIFIED BY 'Bih222';
         GRANT ALL PRIVILEGES ON blog_site.\* TO 'charlesbih'@'localhost';
         FLUSH PRIVILEGES;
 
-6.  Locate the conn.php and update various variables(password, username, database etc.) with the details of the new user you created.
-7.  Start your server launch the app.
+6.  Locate the conn.php and update various variables(password, username, database, etc.) with the details of the new user you created.
+7.  Start your server and launch the app.
 
 # Conclusion
 
