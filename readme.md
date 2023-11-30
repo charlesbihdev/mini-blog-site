@@ -1,7 +1,7 @@
 ## Intro
 <img src="./mk-image/postss.JPG" width="600" height="300">
 
-Hello I'm Charles Owusu Bih, an aspiring software Developer. This is my second PHP project. My first project was a simple crud application which I added an upload image feature, checkout my first php project [here](http://charles-crud.infinityfreeapp.com/create.php). I decided to try something new this time by building a mini blog website. I decide to name it UMAT-PRESS. UMAT is University of Mines and Technology(My current institution) and Press comes from **Wordpress**. I am a blogger and wordpress developer, basically I got the UMAT-PRESS inspiration from **wordpress**.
+Hello I'm Charles Owusu Bih, an aspiring software Developer. This is my second PHP project. My first project was a simple crud application which I added an upload image feature, checkout my first php project [here](http://charles-crud.infinityfreeapp.com/create.php). I am a blogger and wordpress developer, basically I got the UMAT-PRESS inspiration from **wordpress**.
 
 ## About UMAT-PRESS
 
